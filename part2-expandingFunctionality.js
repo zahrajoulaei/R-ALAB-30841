@@ -8,7 +8,5 @@ const cells = rows.map((row) => row.split(","));
 
 let numberOfCols = cells[0].length;
 
-cells.forEach((cell) => {
-  const finalCell = cell.slice(0, numberOfCols);
-  console.log(finalCell);
-});
+const finalArray = cells.map((cell) => cell.slice(0, numberOfCols));
+console.log(finalArray);
